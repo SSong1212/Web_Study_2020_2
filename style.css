@@ -50,15 +50,64 @@ section .mainLeft {
     display: flex;
     flex-direction: column;
     margin-right: 50px;
-    max-width: 700px;
+    max-width: 500px;
     color: white;
 }
 
 section .mainRight {
     display: flex;
     flex-direction: column;
+    max-width: 300px;
+    color: white;
 }
 
-section .mainRight input {
-    margin: 10px;    
+section .mainRight li {
+    margin-bottom: 15px;
+}
+
+.usernameInput {
+    padding: 0px 10px;
+    border: 1px solid slategrey;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 100%;
+    height: 40px;
+}
+
+.emailInput {
+    padding: 0px 10px;
+    border: 1px solid slategrey;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 100%;
+    height: 40px;
+}
+
+.passwordInput {
+    padding: 0px 10px;
+    border: 1px solid slategrey;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 100%;
+    height: 40px;
+}
+
+#mainRight .policy {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#sectionBtnSignUp {
+    padding: 20px;
+    font-size: 20px;
+    width: 100%;
+    height: 60px;    
+    text-align: center;
+    border: 1px solid #55ae2e;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #85d364, #55ae2e);
 }
