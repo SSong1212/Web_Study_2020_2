@@ -1,11 +1,13 @@
 
-ul {
+li, ul {
     list-style: none;
 }
 
 a {
     text-decoration: none;
 }
+
+/* header */
 
 header div .logo {
     width: 32px;
@@ -32,4 +34,31 @@ header div .leftMenu li a {
 
 header div .leftMenu li a:hover {
     color: blue;
+}
+
+/* section */
+
+section {
+    position: relative;
+    background-image: url(https://heropcode.github.io/GitHub-Responsive/img/bg.jpg);
+    background-size: cover;
+    display: flex;
+    padding: 100px;
+}
+
+section .mainLeft {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    max-width: 700px;
+    color: white;
+}
+
+section .mainRight {
+    display: flex;
+    flex-direction: column;
+}
+
+section .mainRight input {
+    margin: 10px;    
 }
