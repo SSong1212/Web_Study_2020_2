@@ -9,26 +9,38 @@ a {
 
 /* header */
 
+header {
+    position: relative;
+    display: flex;
+}
+
+header .headerArea {
+    position: relative;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* header left */
+header .leftMenuArea {
+    display: flex;
+    float: left;
+    align-items: center;
+}
+
 header div .logo {
     width: 32px;
     height: 32px;
     padding: 10px;
 }
 
-header .leftMenuArea {
-    display: flex;
-    padding: 2px;
-}
-
 header div .leftMenu {
     display: flex;
-    margin-left: 5px;
     padding-left: 5px;
-    padding-bottom: 15px;
 }
 
 header div .leftMenu li a {
-    padding: 10px;
+    padding-left: 10px;
     color: black;
 }
 
@@ -36,17 +48,50 @@ header div .leftMenu li a:hover {
     color: blue;
 }
 
+/* header right */
+
+header .rightMenuArea {
+    display: flex;
+    float: right;
+    align-items: center;
+}
+
+header div .rightMenu {
+    display: flex;
+}
+
+header div .rightMenu li a {
+    padding-left: 10px;
+    color: black;
+    font-size: 13px;
+}
+
+header div .rightMenu li a:hover {
+    color: blue;
+}
+
+header div .rightMenu div {
+    padding-left: 10px;
+}
+
 /* section */
 
 section {
     position: relative;
     background-image: url(https://heropcode.github.io/GitHub-Responsive/img/bg.jpg);
+    background-position: bottom left;
     background-size: cover;
-    display: flex;
-    padding: 100px;
 }
 
-section .mainLeft {
+section .mainSectionInner {
+    display: flex;
+    position: relative;
+    padding: 120px 0;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+section .mainSectionInner .mainLeft {
     display: flex;
     flex-direction: column;
     margin-right: 50px;
@@ -54,14 +99,14 @@ section .mainLeft {
     color: white;
 }
 
-section .mainRight {
+section .mainSectionInner .mainRight {
     display: flex;
     flex-direction: column;
     max-width: 300px;
     color: white;
 }
 
-section .mainRight li {
+section .mainSectionInner .mainRight li {
     margin-bottom: 15px;
 }
 

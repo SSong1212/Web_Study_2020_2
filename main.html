@@ -4,55 +4,80 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header class="headerArea">
-            <div class="leftMenuArea">
-                <!-- logo -->
-                <div class="logo">
-                    <a href="./main.html">
-                        <img src="https://heropcode.github.io/GitHub-Responsive/img/logo.svg" alt="main logo image">
-                    </a>
+        <header class="header">
+            <div class="headerArea">
+                <div class="leftMenuArea">
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="./main.html">
+                            <img src="https://heropcode.github.io/GitHub-Responsive/img/logo.svg" alt="main logo image">
+                        </a>
+                    </div>
+                    <!-- left menu -->
+                    <ul class="leftMenu">
+                        <li>
+                            <a href="./main.html">Personal</a>
+                        </li>
+                        <li>
+                            <a href="./main.html">Open source</a>
+                        </li>
+                        <li>
+                            <a href="./main.html">Business</a>
+                        </li>
+                        <li>
+                            <a href="./main.html">Explore</a>
+                        </li>
+                    </ul>
                 </div>
-                <!-- left menu -->
-                <ul class="leftMenu">
-                    <li>
-                        <a href="./main.html">Personal</a>
-                    </li>
-                    <li>
-                        <a href="./main.html">Open source</a>
-                    </li>
-                    <li>
-                        <a href="./main.html">Business</a>
-                    </li>
-                    <li>
-                        <a href="./main.html">Explore</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="rightMenuArea">
-
-            </div>
+                <div class="rightMenuArea">
+                    <!-- right menu -->
+                    <ul class="rightMenu">
+                        <li>
+                            <a href="./main.html">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="./main.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="./main.html">Support</a>
+                        </li>
+                        <div class="rightSearch">
+                            <input class="search" type="text" id="search" name="search" placeholder="Search GitHub">
+                        </div>
+                        <div class="rightBtnSet">
+                            <button id="headerBtnSignIn" class="headerBtnSignIn" type="submit">Sign in</button>
+                            <button id="headerBtnSignIn" class="headerBtnSignUp" type="submit">Sign up</button>
+                        </div>
+                    </ul>
+                </div>
+            </div>            
         </header>
+        <!-- section -->
         <section class="mainSection">
-            <div class="mainLeft">
-                <h1 class="mainLeftTitle">How people build software</h1>
-                <p class="mainLeftDescription">Millions of developers use GitHub to build personal projects, support their businesses, and work together on open source technologies.</p>
+            <div class="mainSectionInner">
+                <!-- section left -->
+                <div class="mainLeft">
+                    <h1 class="mainLeftTitle">How people build software</h1>
+                    <p class="mainLeftDescription">Millions of developers use GitHub to build personal projects, support their businesses, and work together on open source technologies.</p>
+                </div>
+                <!-- section right -->
+                <form id="mainRight" class="mainRight">
+                    <li>
+                        <input class="usernameInput" type="text" id="username" name="name" placeholder="Pick a username">
+                    </li>
+                    <li>
+                        <input class="emailInput" type="email" id="email" name="email" placeholder="Your email address">
+                    </li>
+                    <li>
+                        <input class="passwordInput" type="password" id="password" name="password" placeholder="Create a password">
+                        <p class="policy">Use at least one letter, one numeral, and seven characters.</p>
+                    </li>
+                    <li>
+                        <button id="sectionBtnSignUp" class="sectionBtnSignUp" type="submit">Sign up for GitHub</button>
+                        <p class="policy">By clicking "Sign up for GitHub", you agree to our terms of service and privacy policy. We'll occasionally send you account related emails.</p>
+                    </li>                
+                </form>
             </div>
-            <form id="mainRight" class="mainRight">
-                <li>
-                    <input class="usernameInput" type="text" id="username" name="name" placeholder="Pick a username">
-                </li>
-                <li>
-                    <input class="emailInput" type="email" id="email" name="email" placeholder="Your email address">
-                </li>
-                <li>
-                    <input class="passwordInput" type="password" id="password" name="password" placeholder="Create a password">
-                    <p class="policy">Use at least one letter, one numeral, and seven characters.</p>
-                </li>
-                <li>
-                    <button id="sectionBtnSignUp" class="sectionBtnSignUp" type="submit"> Sign up for GitHub</button>
-                    <p class="policy">By clicking "Sign up for GitHub", you agree to our terms of service and privacy policy. We'll occasionally send you account related emails.</p>
-                </li>                
-            </form>
         </section>
     </body>
 </html>
